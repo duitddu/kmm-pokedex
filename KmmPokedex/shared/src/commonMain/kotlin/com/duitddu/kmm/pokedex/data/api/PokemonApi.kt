@@ -52,5 +52,5 @@ class PokemonApi {
     suspend fun getPokemonDetail(
         name: String
     ): PokemonDetailResponse =
-        httpClient.get("/pokemon/$name").body()
+        httpClient.get("pokemon/$name").body()
 }

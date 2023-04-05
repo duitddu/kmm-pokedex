@@ -47,8 +47,8 @@ class PokemonRepository(
             imageUrl = order.toPokemonImageUrl(),
             weight = this.weight,
             height = this.height,
-            types = this.type.type.map { typeInfo ->
-                PokemonType.values().find { it.rawName == typeInfo.name } ?: PokemonType.NORMAL
+            types = this.types.map { typeInfo ->
+                PokemonType.values().find { it.name.equals(typeInfo.type.name, ignoreCase = true) } ?: PokemonType.NORMAL
             }
         )
     }

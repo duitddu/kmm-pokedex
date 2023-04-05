@@ -9,6 +9,23 @@ data class PokemonDetail(
     val types: List<PokemonType>
 )
 
-enum class PokemonType(val rawName: String, val color: Long) {
-    NORMAL("normal", 0xFF000000)
+enum class PokemonType {
+    NORMAL,
+    FIRE,
+    WATER,
+    ELECTRIC,
+    GRASS,
+    ICE,
+    FIGHTING,
+    POISON,
+    GROUND,
+    FLYING,
+    PSYCHIC,
+    BUG,
+    ROCK,
+    GHOST,
+    DRAGON,
+    DARK,
+    STEEL,
+    FAIRY
 }

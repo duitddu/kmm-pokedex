@@ -7,7 +7,7 @@ data class PokemonDetailResponse(
     val id: Int,
     val name: String,
     val order: Int,
-    val type: PokemonTypeResponse,
+    val types: List<PokemonTypeResponse>,
     val height: Int,
     val weight: Int
 )
@@ -15,7 +15,7 @@ data class PokemonDetailResponse(
 @Serializable
 data class PokemonTypeResponse(
     val slot: Int,
-    val type: List<PokemonTypeInfoResponse>
+    val type: PokemonTypeInfoResponse
 )
 
 @Serializable
